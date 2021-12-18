@@ -1,0 +1,74 @@
+<%-- 
+    Document   : index
+     Author     : Nouf
+--%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Login Page</title>
+        <style>
+body {
+background-color: powderblue;
+text-align: center;
+
+} 
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}div{
+  border-radius: 5px;
+   padding: 20px;
+    padding-left: 630px; 
+   font-size: 35px;
+  color: white;
+   padding: 10px;
+  text-align: center;
+  align: center;
+  } 
+  footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+} 
+form {
+    display: inline-block;
+} 
+</style> 
+    </head>
+    <body>
+        <header>
+     <h1>Event Management System</h1>
+    <p>Login Page</p>
+        </header>
+   <div>
+       <form name="login_form" action="verification.jsp" method="POST">
+            <table border="0"> 
+                <tbody>
+                    <tr>
+                        <td> Username</td>
+                        <td><input type="text" name="username" value="" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td> Password</td>
+                        <td><input type="Password" name="password" value="" size="8" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Login" name="Submit" /></td>
+                        <td><input type="reset" value="Clear" name="Clear" /></td>
+                    </tr>
+                </tbody>
+            </table> 
+        </form>
+             <p>You dont have account ? <a href='signup.jsp'> Sign Up </a> </p>
+
+       </div> 
+        <footer>   <p>All Rights Reserved to Group1</p>  </footer>
+    </body>
+</html>
+ 
